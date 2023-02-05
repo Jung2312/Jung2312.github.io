@@ -26,6 +26,8 @@ function onbookSearch(event) {
   const Apiurl = `https://dapi.kakao.com/v3/search/book?target=title`;
   const bookName = bookInput.value;
 
+  bookInput.text = "";
+
   $.ajax({
     //코드 상단 : 요청에 대한 정보
     method: "GET", // 전송 방식
@@ -42,8 +44,6 @@ function onbookSearch(event) {
     bookauthor.innerText = authors;
     bookImg.src = img;
   });
-
-  bookInput.value = "";
 }
 
 bookForm.addEventListener("submit", onbookSearch);
