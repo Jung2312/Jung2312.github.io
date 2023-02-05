@@ -41,8 +41,9 @@ function onbookSearch(event) {
     booktitle.innerText = title;
     bookauthor.innerText = authors;
     bookImg.src = img;
-    bookInput.value = "";
   });
+
+  bookInput.value = "";
 }
 
 bookForm.addEventListener("submit", onbookSearch);
