@@ -41,7 +41,7 @@ function onbookSearch(event) {
     booktitle.innerText = title;
     bookauthor.innerText = authors;
     bookImg.src = img;
-    bookName = "";
+    bookInput.value = "";
   });
 }
 
